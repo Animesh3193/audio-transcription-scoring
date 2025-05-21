@@ -24,8 +24,6 @@ The application processes transcribed audio and a given topic using several ling
     * **Logic:** Evaluates the diversity and richness of the vocabulary used.
         * **MTLD (Measure of Textual Lexical Diversity):** Calculates the average segment length where a certain type-token ratio is maintained. Higher MTLD indicates more sustained lexical diversity.
         * **HD-D (Hypergeometric Distribution Diversity):** A statistical measure modeling the probability of encountering unique words in random samples, providing a robust, length-independent diversity score.
-        * **Average Word Length:** Simple measure of word complexity.
-        * **Word Commonness/Rarity:** Assesses how common or rare the words used are, based on the Brown Corpus frequency distribution.
         * **Readability Metrics (Flesch Reading Ease, Gunning Fog Index):** Provide an indication of how easy or difficult the text is to understand.
     * **Tools:** `lexicalrichness` for MTLD and HD-D, `nltk` for word processing and commonness, `textstat` for readability.
     * **Score:** A composite score between 1 and 10 derived from the various vocabulary metrics.
