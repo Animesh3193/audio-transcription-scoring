@@ -16,12 +16,17 @@ try:
         nltk.data.find('corpora/punkt_tab')
     except :
         nltk.download('punkt_tab')
+except Exception as e:
+    print(f"Error downloading NLTK resources: {e}")
+    lang_tool = None
+
+try:
     lang_tool = language_tool_python.LanguageTool('en-US')
 except Exception as e:
-    print(f"Error downloading NLTK resources or initializing language tool: {e}")
+    print(f"Error initializing language tool: {e}")
     lang_tool = None
-    
-    
+
+
 def calculate_grammar_score(transcribe_output):
     """
     Calculate grammar score based on the transcribe output.
