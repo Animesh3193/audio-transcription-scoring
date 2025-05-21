@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+python-multipart
+sentence-transformers
+scipy
+scikit-learn
+nltk
+lexicalrichness
+textstat
+language-tool-python
+aiofiles
+nemo_toolkit[asr]

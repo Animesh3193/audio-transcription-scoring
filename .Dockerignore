@@ -1,0 +1,6 @@
+*.ipynb
+*.pyc
+__pycache__/
+uploaded_audio/
+*.wav
+*.mp3
